@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="325" viewBox="0 0 900 325" font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Courier New',monospace">
+<title>Open channel terminal: build beyond the ordinary</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#03060f"/><stop offset="1" stop-color="#0b1130"/></linearGradient>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<linearGradient id="gt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<filter id="gl"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="tc0"><rect class="w0" x="40" y="75" width="0" height="24"/></clipPath>
+<clipPath id="tc1"><rect class="w1" x="40" y="113" width="0" height="24"/></clipPath>
+<clipPath id="tc2"><rect class="w2" x="40" y="151" width="0" height="24"/></clipPath>
+<clipPath id="tc3"><rect class="w3" x="40" y="189" width="0" height="24"/></clipPath>
+<clipPath id="tc4"><rect class="w4" x="40" y="228" width="0" height="44"/></clipPath>
+</defs>
+<style>
+.bdr{stroke-dasharray:260 2600;animation:bdr 6s linear infinite}
+@keyframes bdr{to{stroke-dashoffset:-2860}}
+.cur{animation:cu 1s steps(1) infinite}
+@keyframes cu{50%{opacity:0}}
+.big{animation:bg 3s ease-in-out infinite}
+@keyframes bg{0%,100%{opacity:.85}50%{opacity:1}}
+.w0{animation:w0 16.0s linear infinite;width:0}
+@keyframes w0{0%,3.75%{width:0}14.16%,94%{width:333px}98%,100%{width:0}}
+.w1{animation:w1 16.0s linear infinite;width:0}
+@keyframes w1{0%,17.28%{width:0}31.34%,94%{width:450px}98%,100%{width:0}}
+.w2{animation:w2 16.0s linear infinite;width:0}
+@keyframes w2{0%,34.47%{width:0}50.78%,94%{width:522px}98%,100%{width:0}}
+.w3{animation:w3 16.0s linear infinite;width:0}
+@keyframes w3{0%,53.91%{width:0}66.84%,94%{width:414px}98%,100%{width:0}}
+.w4{animation:w4 16.0s linear infinite;width:0}
+@keyframes w4{0%,69.97%{width:0}77.00%,94%{width:338px}98%,100%{width:0}}
+</style>
+<rect x="2" y="2" width="896" height="321" rx="18" fill="url(#bg)"/>
+<rect x="2" y="2" width="896" height="321" rx="18" fill="none" stroke="#22d3ee" stroke-opacity=".2" stroke-width="1.5"/>
+<rect class="bdr" x="2" y="2" width="896" height="321" rx="18" fill="none" stroke="url(#bd)" stroke-width="3" stroke-linecap="round"/>
+<circle cx="32" cy="30" r="6" fill="#f87171"/><circle cx="52" cy="30" r="6" fill="#fbbf24"/><circle cx="72" cy="30" r="6" fill="#34d399"/>
+<text x="100" y="35" fill="#7c8db5" font-size="13">open_channel.sh</text>
+<line x1="24" y1="50" x2="876" y2="50" stroke="#22d3ee" stroke-opacity=".2"/>
+<g clip-path="url(#tc0)"><text x="40" y="92" fill="#22d3ee" font-size="15">root@dhruv:~$ ./open_channel --collab</text></g>
+<g clip-path="url(#tc1)"><text x="40" y="130" fill="#c9d6e8" font-size="15">&gt; status: open to interesting engineering problems</text></g>
+<g clip-path="url(#tc2)"><text x="40" y="168" fill="#c9d6e8" font-size="15">&gt; accepting: thoughtful collaboration · useful open-source</text></g>
+<g clip-path="url(#tc3)"><text x="40" y="206" fill="#22d3ee" font-size="15">root@dhruv:~$ echo "BUILD BEYOND THE ORDINARY"</text></g>
+<g clip-path="url(#tc4)"><text class="big" x="40" y="262" fill="url(#gt)" font-size="27" font-weight="800" letter-spacing="1" filter="url(#gl)">BUILD BEYOND THE ORDINARY</text></g>
+<text class="cur" x="40" y="300" fill="#22d3ee" font-size="18">█</text></svg>

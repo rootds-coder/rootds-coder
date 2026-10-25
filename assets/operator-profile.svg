@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410" font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Courier New',monospace">
+<title>Operator profile</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050816"/><stop offset="1" stop-color="#0d1330"/></linearGradient>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee" stop-opacity=".22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#1e2a4a" stroke-width=".6" opacity=".55"/></pattern>
+<clipPath id="card"><rect x="2" y="2" width="896" height="406" rx="18"/></clipPath>
+</defs>
+<style>
+.k{fill:#22d3ee;font-size:15px;font-weight:700;letter-spacing:1px}
+.v{fill:#e8fbff;font-size:15px}
+.row{opacity:0;animation:in .6s ease forwards}
+@keyframes in{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:translateX(0)}}
+.pt{opacity:0;animation:up .7s ease forwards}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.dot{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.cur{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.sweep{animation:sweep 5s linear infinite}
+@keyframes sweep{from{transform:translateY(-60px)}to{transform:translateY(410px)}}
+.flow{stroke-dasharray:260 2400;animation:flow 6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-2660}}
+.glow{animation:glow 3s ease-in-out infinite}
+@keyframes glow{0%,100%{opacity:.35}50%{opacity:1}}
+</style>
+<rect x="2" y="2" width="896" height="406" rx="18" fill="url(#bg)"/>
+<rect x="2" y="2" width="896" height="406" rx="18" fill="url(#grid)"/>
+<g clip-path="url(#card)"><rect class="sweep" x="0" y="0" width="900" height="60" fill="url(#scan)"/></g>
+<rect x="2" y="2" width="896" height="406" rx="18" fill="none" stroke="#22d3ee" stroke-opacity=".25" stroke-width="1.5"/>
+<rect class="flow" x="2" y="2" width="896" height="406" rx="18" fill="none" stroke="url(#bd)" stroke-width="3" stroke-linecap="round"/>
+<circle cx="32" cy="30" r="6" fill="#f87171"/><circle cx="52" cy="30" r="6" fill="#fbbf24"/><circle cx="72" cy="30" r="6" fill="#34d399"/>
+<text x="100" y="35" fill="#7c8db5" font-size="13">operator@rootds:~$ cat profile.sys</text>
+<line x1="24" y1="50" x2="876" y2="50" stroke="#22d3ee" stroke-opacity=".2"/>
+<g class="row" style="animation-delay:0.3s"><text class="k" x="40" y="84">OPERATOR</text><text class="v" x="176" y="84">Dhruv Singh Chauhan  (@rootds-coder)</text></g><g class="row" style="animation-delay:0.6499999999999999s"><text class="k" x="40" y="116">CLASS</text><text class="v" x="176" y="116">Full-Stack Developer · AI Automation Builder</text></g><g class="row" style="animation-delay:1.0s"><text class="k" x="40" y="148">STATUS</text><circle class="dot" cx="180" cy="143" r="5" fill="#34d399"/><text class="v" x="196" y="148">ONLINE — building AI-powered products &amp; dev tools</text></g><g class="row" style="animation-delay:1.3499999999999999s"><text class="k" x="40" y="180">SPECIALTY</text><text class="v" x="176" y="180">APIs · Automation · Web Apps · Backend Systems</text></g><g class="row" style="animation-delay:1.7s"><text class="k" x="40" y="212">CREED</text><text class="v" x="176" y="212">Make it useful. Make it reliable. Make it yours.</text></g><text class="cur" x="40" y="244" fill="#22d3ee" font-size="15">█</text>
+<g class="pt" style="animation-delay:2.2s">
+<rect x="30" y="262" width="270" height="124" rx="12" fill="#0a1128" stroke="#22d3ee" stroke-opacity=".45"/>
+<rect class="glow" x="30" y="262" width="270" height="4" rx="2" fill="#22d3ee"/>
+<text x="48" y="292" fill="#22d3ee" font-size="13" font-weight="700" letter-spacing="1.5">CURRENTLY BUILDING</text><text x="48" y="320" fill="#c9d6e8" font-size="13"><tspan fill="#22d3ee">›</tspan> AI assistants</text><text x="48" y="341" fill="#c9d6e8" font-size="13"><tspan fill="#22d3ee">›</tspan> API orchestration</text><text x="48" y="362" fill="#c9d6e8" font-size="13"><tspan fill="#22d3ee">›</tspan> Automation tools &amp; web products</text></g>
+<g class="pt" style="animation-delay:2.5s">
+<rect x="315" y="262" width="270" height="124" rx="12" fill="#0a1128" stroke="#a78bfa" stroke-opacity=".45"/>
+<rect class="glow" x="315" y="262" width="270" height="4" rx="2" fill="#a78bfa"/>
+<text x="333" y="292" fill="#a78bfa" font-size="13" font-weight="700" letter-spacing="1.5">DAILY DRIVERS</text><text x="333" y="320" fill="#c9d6e8" font-size="13"><tspan fill="#a78bfa">›</tspan> JavaScript / TypeScript</text><text x="333" y="341" fill="#c9d6e8" font-size="13"><tspan fill="#a78bfa">›</tspan> Node.js · React · Python</text><text x="333" y="362" fill="#c9d6e8" font-size="13"><tspan fill="#a78bfa">›</tspan> Databases &amp; cloud deploys</text></g>
+<g class="pt" style="animation-delay:2.8000000000000003s">
+<rect x="600" y="262" width="270" height="124" rx="12" fill="#0a1128" stroke="#34d399" stroke-opacity=".45"/>
+<rect class="glow" x="600" y="262" width="270" height="4" rx="2" fill="#34d399"/>
+<text x="618" y="292" fill="#34d399" font-size="13" font-weight="700" letter-spacing="1.5">EXPLORING</text><text x="618" y="320" fill="#c9d6e8" font-size="13"><tspan fill="#34d399">›</tspan> System design &amp; reliability</text><text x="618" y="341" fill="#c9d6e8" font-size="13"><tspan fill="#34d399">›</tspan> Developer experience</text><text x="618" y="362" fill="#c9d6e8" font-size="13"><tspan fill="#34d399">›</tspan> Privacy-aware software, OSS</text></g>
+</svg>

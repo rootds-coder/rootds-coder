@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Courier New',monospace">
+<title>How a typical system gets built: idea, prototype, architecture, implementation, validation, release, feedback, then iterate</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#03050f"/><stop offset="1" stop-color="#0b1130"/></linearGradient>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+<radialGradient id="pk"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+<radialGradient id="vg"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></radialGradient>
+<clipPath id="cl"><rect x="2" y="2" width="896" height="466" rx="18"/></clipPath>
+</defs>
+<style>
+.tw{animation:tw 3s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.lit{animation:lit 8s ease-in-out infinite;stroke-opacity:.35;fill-opacity:.12}
+@keyframes lit{0%{stroke-opacity:.35;fill-opacity:.12}3%,12%{stroke-opacity:1;fill-opacity:.55}22%,100%{stroke-opacity:.35;fill-opacity:.12}}
+.lab{animation:lab 8s ease-in-out infinite;opacity:.55}
+@keyframes lab{0%{opacity:.5}3%,12%{opacity:1}22%,100%{opacity:.5}}
+.ic{animation:ic 8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes ic{0%{transform:scale(1)}4%,10%{transform:scale(1.35)}20%,100%{transform:scale(1)}}
+.pan{opacity:0;animation:pan 8s ease-in-out infinite}
+@keyframes pan{0%{opacity:.45}5%,28%{opacity:1}33%,100%{opacity:.45}}
+.fade{animation:fd 8s ease-in-out infinite}
+@keyframes fd{0%,70%{opacity:.25}78%,95%{opacity:1}100%{opacity:.25}}
+.flowl{stroke-dasharray:6 8;animation:fl 1.2s linear infinite}
+@keyframes fl{to{stroke-dashoffset:-28}}
+.bar{animation:br 6s ease-in-out infinite}
+@keyframes br{0%,100%{transform:scaleX(.2)}50%{transform:scaleX(1)}}
+.title{animation:ti 8s ease-in-out infinite}
+@keyframes ti{0%{opacity:0;letter-spacing:12px}8%,92%{opacity:1;letter-spacing:5px}100%{opacity:0;letter-spacing:5px}}
+</style>
+<rect x="2" y="2" width="896" height="466" rx="18" fill="url(#bg)"/>
+<g clip-path="url(#cl)">
+<circle class="tw" cx="341" cy="117" r="1.6" fill="#cfe9ff" style="animation-delay:1.95s"/><circle class="tw" cx="84" cy="314" r="0.8" fill="#cfe9ff" style="animation-delay:1.10s"/><circle class="tw" cx="69" cy="299" r="1" fill="#cfe9ff" style="animation-delay:0.11s"/><circle class="tw" cx="454" cy="254" r="0.8" fill="#cfe9ff" style="animation-delay:0.72s"/><circle class="tw" cx="574" cy="257" r="0.8" fill="#cfe9ff" style="animation-delay:2.48s"/><circle class="tw" cx="136" cy="154" r="0.8" fill="#cfe9ff" style="animation-delay:1.73s"/><circle class="tw" cx="416" cy="65" r="1" fill="#cfe9ff" style="animation-delay:0.14s"/><circle class="tw" cx="889" cy="108" r="1.3" fill="#cfe9ff" style="animation-delay:1.26s"/><circle class="tw" cx="563" cy="100" r="1.3" fill="#cfe9ff" style="animation-delay:1.68s"/><circle class="tw" cx="708" cy="132" r="0.8" fill="#cfe9ff" style="animation-delay:1.74s"/><circle class="tw" cx="664" cy="136" r="1.3" fill="#cfe9ff" style="animation-delay:0.29s"/><circle class="tw" cx="739" cy="72" r="0.8" fill="#cfe9ff" style="animation-delay:1.86s"/><circle class="tw" cx="518" cy="388" r="1.6" fill="#cfe9ff" style="animation-delay:2.33s"/><circle class="tw" cx="486" cy="339" r="1.6" fill="#cfe9ff" style="animation-delay:1.08s"/><circle class="tw" cx="264" cy="132" r="1" fill="#cfe9ff" style="animation-delay:0.25s"/><circle class="tw" cx="317" cy="308" r="1.6" fill="#cfe9ff" style="animation-delay:2.63s"/><circle class="tw" cx="756" cy="269" r="1.3" fill="#cfe9ff" style="animation-delay:1.83s"/><circle class="tw" cx="84" cy="100" r="1.6" fill="#cfe9ff" style="animation-delay:0.49s"/><circle class="tw" cx="360" cy="117" r="1.6" fill="#cfe9ff" style="animation-delay:1.27s"/><circle class="tw" cx="694" cy="79" r="1.3" fill="#cfe9ff" style="animation-delay:1.02s"/><circle class="tw" cx="368" cy="344" r="1.6" fill="#cfe9ff" style="animation-delay:1.74s"/><circle class="tw" cx="477" cy="75" r="0.8" fill="#cfe9ff" style="animation-delay:2.83s"/><circle class="tw" cx="495" cy="396" r="0.8" fill="#cfe9ff" style="animation-delay:0.18s"/><circle class="tw" cx="728" cy="198" r="1.6" fill="#cfe9ff" style="animation-delay:0.85s"/><circle class="tw" cx="405" cy="382" r="1.3" fill="#cfe9ff" style="animation-delay:0.07s"/><circle class="tw" cx="482" cy="221" r="1" fill="#cfe9ff" style="animation-delay:1.83s"/><circle class="tw" cx="515" cy="70" r="1" fill="#cfe9ff" style="animation-delay:2.30s"/><circle class="tw" cx="142" cy="418" r="1" fill="#cfe9ff" style="animation-delay:1.19s"/><circle class="tw" cx="518" cy="81" r="1" fill="#cfe9ff" style="animation-delay:1.35s"/><circle class="tw" cx="572" cy="182" r="1" fill="#cfe9ff" style="animation-delay:2.46s"/><circle class="tw" cx="573" cy="182" r="1.6" fill="#cfe9ff" style="animation-delay:2.96s"/><circle class="tw" cx="709" cy="234" r="1" fill="#cfe9ff" style="animation-delay:0.45s"/><circle class="tw" cx="190" cy="117" r="1" fill="#cfe9ff" style="animation-delay:1.98s"/><circle class="tw" cx="22" cy="288" r="1" fill="#cfe9ff" style="animation-delay:0.79s"/><circle class="tw" cx="14" cy="114" r="1.6" fill="#cfe9ff" style="animation-delay:1.60s"/><circle class="tw" cx="634" cy="329" r="1.3" fill="#cfe9ff" style="animation-delay:2.86s"/><circle class="tw" cx="717" cy="303" r="0.8" fill="#cfe9ff" style="animation-delay:1.37s"/><circle class="tw" cx="808" cy="388" r="1.6" fill="#cfe9ff" style="animation-delay:1.19s"/><circle class="tw" cx="413" cy="93" r="1.6" fill="#cfe9ff" style="animation-delay:1.90s"/><circle class="tw" cx="73" cy="137" r="0.8" fill="#cfe9ff" style="animation-delay:2.95s"/><circle class="tw" cx="461" cy="123" r="0.8" fill="#cfe9ff" style="animation-delay:1.02s"/><circle class="tw" cx="63" cy="92" r="0.8" fill="#cfe9ff" style="animation-delay:1.70s"/><circle class="tw" cx="559" cy="91" r="1.3" fill="#cfe9ff" style="animation-delay:1.84s"/><circle class="tw" cx="82" cy="146" r="1.6" fill="#cfe9ff" style="animation-delay:0.45s"/><circle class="tw" cx="268" cy="217" r="1.3" fill="#cfe9ff" style="animation-delay:1.42s"/><circle class="tw" cx="128" cy="289" r="1.6" fill="#cfe9ff" style="animation-delay:1.44s"/>
+<rect x="0" y="0" width="900" height="34" fill="#000"/><rect x="0" y="436" width="900" height="34" fill="#000"/>
+<text class="title" x="450.0" y="23" fill="#9fb4d8" font-size="12" text-anchor="middle" letter-spacing="5">SCENE 03  ·  THE BUILD LOOP</text>
+<text x="450.0" y="457" fill="#5e6f94" font-size="11" text-anchor="middle" letter-spacing="3">IDEA → PROTOTYPE → ARCHITECTURE → IMPLEMENTATION → VALIDATION → RELEASE → FEEDBACK → ∞</text>
+<rect width="900" height="470" fill="url(#vg)"/>
+</g>
+<rect x="2" y="2" width="896" height="466" rx="18" fill="none" stroke="url(#bd)" stroke-opacity=".5" stroke-width="1.5"/>
+<line class="flowl" x1="75" y1="170" x2="825" y2="170" stroke="#2c3b66" stroke-width="3"/>
+<path class="flowl" d="M825 132 C 825 62, 75 62, 75 132" fill="none" stroke="#2c3b66" stroke-width="2"/>
+<text x="450.0" y="86" fill="#7c8db5" font-size="11" text-anchor="middle" letter-spacing="3">NEXT ITERATION</text>
+<g>
+<circle class="lit" style="animation-delay:0s" cx="75" cy="170" r="34" fill="#22d3ee" stroke="#22d3ee" stroke-width="2.5"/>
+<text class="ic" style="animation-delay:0s" x="75" y="180" font-size="28" text-anchor="middle">💡</text>
+<text class="lab" style="animation-delay:0s" x="75" y="232" fill="#22d3ee" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">IDEA</text>
+</g>
+<g>
+<circle class="lit" style="animation-delay:1s" cx="200" cy="170" r="34" fill="#a78bfa" stroke="#a78bfa" stroke-width="2.5"/>
+<text class="ic" style="animation-delay:1s" x="200" y="180" font-size="28" text-anchor="middle">⚡</text>
+<text class="lab" style="animation-delay:1s" x="200" y="232" fill="#a78bfa" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">PROTOTYPE</text>
+</g>
+<g>
+<circle class="lit" style="animation-delay:2s" cx="325" cy="170" r="34" fill="#22d3ee" stroke="#22d3ee" stroke-width="2.5"/>
+<text class="ic" style="animation-delay:2s" x="325" y="180" font-size="28" text-anchor="middle">🏗️</text>
+<text class="lab" style="animation-delay:2s" x="325" y="232" fill="#22d3ee" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">ARCHITECT</text>
+</g>
+<g>
+<circle class="lit" style="animation-delay:3s" cx="450" cy="170" r="34" fill="#a78bfa" stroke="#a78bfa" stroke-width="2.5"/>
+<text class="ic" style="animation-delay:3s" x="450" y="180" font-size="28" text-anchor="middle">⌨️</text>
+<text class="lab" style="animation-delay:3s" x="450" y="232" fill="#a78bfa" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">IMPLEMENT</text>
+</g>
+<g>
+<circle class="lit" style="animation-delay:4s" cx="575" cy="170" r="34" fill="#34d399" stroke="#34d399" stroke-width="2.5"/>
+<text class="ic" style="animation-delay:4s" x="575" y="180" font-size="28" text-anchor="middle">🧪</text>
+<text class="lab" style="animation-delay:4s" x="575" y="232" fill="#34d399" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">VALIDATE</text>
+</g>
+<g>
+<circle class="lit" style="animation-delay:5s" cx="700" cy="170" r="34" fill="#f472b6" stroke="#f472b6" stroke-width="2.5"/>
+<text class="ic" style="animation-delay:5s" x="700" y="180" font-size="28" text-anchor="middle">🚀</text>
+<text class="lab" style="animation-delay:5s" x="700" y="232" fill="#f472b6" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">RELEASE</text>
+</g>
+<g>
+<circle class="lit" style="animation-delay:6s" cx="825" cy="170" r="34" fill="#22d3ee" stroke="#22d3ee" stroke-width="2.5"/>
+<text class="ic" style="animation-delay:6s" x="825" y="180" font-size="28" text-anchor="middle">📣</text>
+<text class="lab" style="animation-delay:6s" x="825" y="232" fill="#22d3ee" font-size="11.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">FEEDBACK</text>
+</g>
+
+<g>
+<circle r="16" fill="url(#pk)"><animateMotion dur="8s" repeatCount="indefinite" path="M75 170 L825 170" keyPoints="0;1;1" keyTimes="0;0.75;1" calcMode="linear"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.74;0.75;1" dur="8s" repeatCount="indefinite"/></circle>
+<circle r="16" fill="url(#pk)" opacity="0"><animateMotion dur="8s" repeatCount="indefinite" path="M825 132 C 825 62, 75 62, 75 132" keyPoints="0;0;1" keyTimes="0;0.75;1" calcMode="linear"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.74;0.75;1" dur="8s" repeatCount="indefinite"/></circle>
+</g>
+<g class="pan" style="animation-delay:0s">
+<rect x="40" y="290" width="260" height="120" rx="14" fill="#0a1128" stroke="#22d3ee" stroke-opacity=".6"/>
+<text x="60" y="322" font-size="22">⚡</text>
+<text x="94" y="322" fill="#22d3ee" font-size="16" font-weight="800" letter-spacing="3">BUILD</text>
+<text x="60" y="354" fill="#c9d6e8" font-size="12.5">Concept → interface,</text>
+<text x="60" y="374" fill="#c9d6e8" font-size="12.5">API and data flow</text>
+<rect class="bar" x="60" y="392" width="220" height="3" rx="2" fill="#22d3ee" style="transform-box:fill-box;transform-origin:left;animation-delay:0s"/>
+</g>
+<g class="pan" style="animation-delay:2.67s">
+<rect x="325" y="290" width="260" height="120" rx="14" fill="#0a1128" stroke="#34d399" stroke-opacity=".6"/>
+<text x="345" y="322" font-size="22">🧪</text>
+<text x="379" y="322" fill="#34d399" font-size="16" font-weight="800" letter-spacing="3">DEBUG</text>
+<text x="345" y="354" fill="#c9d6e8" font-size="12.5">Read logs, isolate failures,</text>
+<text x="345" y="374" fill="#c9d6e8" font-size="12.5">test fixes, cut regressions</text>
+<rect class="bar" x="345" y="392" width="220" height="3" rx="2" fill="#34d399" style="transform-box:fill-box;transform-origin:left;animation-delay:2.67s"/>
+</g>
+<g class="pan" style="animation-delay:5.33s">
+<rect x="610" y="290" width="260" height="120" rx="14" fill="#0a1128" stroke="#f472b6" stroke-opacity=".6"/>
+<text x="630" y="322" font-size="22">🚀</text>
+<text x="664" y="322" fill="#f472b6" font-size="16" font-weight="800" letter-spacing="3">SHIP</text>
+<text x="630" y="354" fill="#c9d6e8" font-size="12.5">Deploy, document,</text>
+<text x="630" y="374" fill="#c9d6e8" font-size="12.5">listen, improve</text>
+<rect class="bar" x="630" y="392" width="220" height="3" rx="2" fill="#f472b6" style="transform-box:fill-box;transform-origin:left;animation-delay:5.33s"/>
+</g>
+</svg>

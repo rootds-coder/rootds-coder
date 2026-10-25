@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="170" viewBox="0 0 900 170" font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Courier New',monospace">
+<title>Live telemetry: GitHub activity monitor</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050816"/><stop offset="1" stop-color="#0d1330"/></linearGradient>
+<linearGradient id="ec" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f472b6" stop-opacity="0"/><stop offset=".5" stop-color="#f472b6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+<linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="1" stop-color="#22d3ee" stop-opacity=".55"/></linearGradient>
+<pattern id="gr" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#1e2a4a" stroke-width=".6" opacity=".5"/></pattern>
+<clipPath id="r"><circle cx="105" cy="85" r="58"/></clipPath>
+</defs>
+<style>
+.rot{transform-origin:105px 85px;animation:rot 3.5s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.ping{animation:pg 3.5s ease-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pg{0%,70%{opacity:0;transform:scale(.3)}75%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(2.2)}}
+.ecg{stroke-dasharray:240 760;animation:ecg 2.4s linear infinite}
+@keyframes ecg{to{stroke-dashoffset:-1000}}
+.blk{animation:bk 1.2s steps(1) infinite}
+@keyframes bk{50%{opacity:0}}
+.cnt{animation:cn 4s ease-in-out infinite}
+@keyframes cn{0%,100%{opacity:.75}50%{opacity:1}}
+.bar{transform-box:fill-box;transform-origin:bottom;animation:bar 2.6s ease-in-out infinite}
+@keyframes bar{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+</style>
+<rect x="2" y="2" width="896" height="166" rx="18" fill="url(#bg)"/>
+<rect x="2" y="2" width="896" height="166" rx="18" fill="url(#gr)"/>
+<rect x="2" y="2" width="896" height="166" rx="18" fill="none" stroke="#f472b6" stroke-opacity=".35" stroke-width="1.5"/>
+<circle cx="105" cy="85" r="58" fill="#071022" stroke="#22d3ee" stroke-opacity=".5"/>
+<circle cx="105" cy="85" r="38" fill="none" stroke="#22d3ee" stroke-opacity=".25"/>
+<circle cx="105" cy="85" r="18" fill="none" stroke="#22d3ee" stroke-opacity=".25"/>
+<line x1="47" y1="85" x2="163" y2="85" stroke="#22d3ee" stroke-opacity=".2"/><line x1="105" y1="27" x2="105" y2="143" stroke="#22d3ee" stroke-opacity=".2"/>
+<g clip-path="url(#r)"><g class="rot"><path d="M105 85 L163 85 A58 58 0 0 0 150 48 Z" fill="url(#sweep)"/></g></g>
+<circle class="ping" cx="135" cy="62" r="4" fill="#34d399" style="animation-delay:.4s"/>
+<circle class="ping" cx="78" cy="105" r="4" fill="#f472b6" style="animation-delay:1.6s"/>
+<circle class="ping" cx="118" cy="112" r="4" fill="#a78bfa" style="animation-delay:2.6s"/>
+<text x="200" y="52" fill="#f472b6" font-size="13" font-weight="700" letter-spacing="3">SYSTEM TELEMETRY</text>
+<text x="200" y="78" fill="#ffffff" font-size="22" font-weight="800">GitHub activity monitor</text>
+<g class="cnt"><text x="200" y="104" fill="#34d399" font-size="13">● LIVE</text><text x="262" y="104" fill="#9fb4d8" font-size="13">12 public repositories · @rootds-coder</text></g>
+<path class="ecg" d="M200 140 H250 L262 140 L272 118 L284 158 L296 126 L304 140 H380 L392 140 L402 118 L414 158 L426 126 L434 140 H520 L532 140 L542 118 L554 158 L566 126 L574 140 H660 L672 140 L682 118 L694 158 L706 126 L714 140 H860" fill="none" stroke="url(#ec)" stroke-width="2.5" stroke-linejoin="round"/>
+<g fill="#22d3ee"><rect class="bar" x="770" y="38" width="10" height="44" rx="2" style="animation-delay:0s"/><rect class="bar" x="786" y="38" width="10" height="44" rx="2" fill="#a78bfa" style="animation-delay:.3s"/><rect class="bar" x="802" y="38" width="10" height="44" rx="2" fill="#f472b6" style="animation-delay:.6s"/><rect class="bar" x="818" y="38" width="10" height="44" rx="2" fill="#34d399" style="animation-delay:.9s"/><rect class="bar" x="834" y="38" width="10" height="44" rx="2" style="animation-delay:1.2s"/><rect class="bar" x="850" y="38" width="10" height="44" rx="2" fill="#a78bfa" style="animation-delay:1.5s"/></g>
+</svg>
